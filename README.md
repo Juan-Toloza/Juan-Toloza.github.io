@@ -20,3 +20,5 @@
         margin: 10px 0; /* Añadimos un poco de espacio vertical */
     }
 }
+
+-buscar imagenes de iconos para las redes sociales
