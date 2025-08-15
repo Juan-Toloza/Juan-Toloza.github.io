@@ -10,22 +10,36 @@ body{
 
 /* Info Personal */
 #img-perfil{
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
 }
 
 #info-personal{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 /* Acerca de mi */
 #acerca-de-mi{
     border: 2px black solid;
     border-radius: 20px;
-    width: 650px;
-    height: 300px;
+    width: 40vw;
+    height: 21.9vw;
+    padding: 1vw;
+    margin-right: 1vw;
+    flex-direction: column;
+}
+
+#acerca-de-mi h2{
+    display: flex;
+    padding: 2vw;
+    margin-top: -2vw;
+    margin-left: 15vw;
+}
+
+#acerca-de-mi #img-perfil{
+    margin-top: -2.5vw;
 }
 
 #presentacion{
@@ -33,11 +47,50 @@ body{
     justify-content: space-around;
 }
 
+#presentacion p{
+   margin-top: -2.5vw;
+   margin-left: 0.5vw;
+   text-align: justify;
+}
+
 /* Mas info */
 #mas-info{
     border: 2px black solid;
     border-radius: 20px;
-    width: 650px;
+    width: 52vw;
+    padding: 1vw;
+    flex-direction: column;
+}
+
+.mi-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mi-info div{
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 10vw;
+    padding: 1vw;
+}
+
+.mi-cv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vw;
+    border: 2px black solid;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.mi-cv a{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 1vw;
+    margin: 0.4vw;
+    width: 12vw;
+    height: 1vw;
+    text-align: center;
 }
 
 /* Proyectos en mas */
@@ -46,16 +99,44 @@ body{
     background-color: cadetblue;
     border: 5px black solid;
     border-radius: 20px;
-    padding: 10px;
+    padding: 0.5vw;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 }
 
-#izq, #centro, #der{
+#proy-web, #proy-moviles, #proy-exp{
     background-color: rgb(121, 4, 4);
     border: 2px black solid;
-    padding: 20px;
+    padding: 1.5vw;
     /*flex-grow: 0.32;*/
+    border-radius: 10px;
+    width: 28.5vw;
+}                       
 
-}                                                                     
+#proy-web h2, #proy-moviles h2, #proy-exp h2{
+    margin-top: -0.5vw;
+    text-align: center;
+}
+
+/* plantilla de proyecto */
+
+.proy-plantilla{
+    border: 2px black solid;
+}
+
+.proy-plantilla img{
+    width: 10vw;
+    height: 10vw;
+}
+
+.proy-plantilla a{
+    display: flex;
+}
+
+/* footer */
+
+footer a{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
