@@ -1,0 +1,52 @@
+/* configuracion general */
+body{
+    background-color: rgb(158, 158, 158);
+}
+
+/* Info Personal */
+#img-perfil{
+    width: 100px;
+    height: 100px;
+}
+
+#info-personal{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Acerca de mi */
+#acerca-de-mi{
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+#presentacion{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Mas info */
+#mas-info{
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+/* Proyectos en mas */
+
+#proyectos{
+    background-color: cadetblue;
+    border: 5px black solid;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#izq, #centro, #der{
+    background-color: rgb(121, 4, 4);
+    border: 2px black solid;
+    padding: 20px;
+    flex-grow: 1;
+    height: 200px;
+}                                                                     
