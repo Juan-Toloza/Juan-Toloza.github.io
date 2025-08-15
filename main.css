@@ -3,6 +3,11 @@ body{
     background-color: rgb(158, 158, 158);
 }
 
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+
 /* Info Personal */
 #img-perfil{
     width: 100px;
@@ -12,12 +17,15 @@ body{
 #info-personal{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 /* Acerca de mi */
 #acerca-de-mi{
     border: 2px black solid;
     border-radius: 20px;
+    width: 650px;
+    height: 300px;
 }
 
 #presentacion{
@@ -29,6 +37,7 @@ body{
 #mas-info{
     border: 2px black solid;
     border-radius: 20px;
+    width: 650px;
 }
 
 /* Proyectos en mas */
@@ -47,6 +56,6 @@ body{
     background-color: rgb(121, 4, 4);
     border: 2px black solid;
     padding: 20px;
-    flex-grow: 1;
-    height: 200px;
+    /*flex-grow: 0.32;*/
+
 }                                                                     
