@@ -24,6 +24,12 @@ main {
     margin-bottom: 1vw;
 }
 
+/* presentacion */
+
+#presentacion p{
+    font-size: 1.1vw;
+}
+
 /* Acerca de mi */
 #acerca-de-mi {
     border: 2px #D1D5DB solid; /* Bordes suaves */
@@ -50,7 +56,8 @@ main {
 
 #presentacion {
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 #presentacion p {
@@ -77,10 +84,16 @@ main {
 .mi-cv {
     display: flex;
     justify-content: space-around;
-    margin-top: 1vw;
+    margin-top: 2vw;
     border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 10px;
     align-items: center;
+}
+
+#vercv:hover, #descargarcv:hover{
+    transition: 0.5s;
+    border: 2px #1c4fbd solid;
+    background-color: #1c4fbd;
 }
 
 .mi-cv a {
@@ -93,6 +106,9 @@ main {
     width: 12vw;
     height: 1vw;
     text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding-bottom: 1.7vw;
 }
 
 /* tarjetas de lenguajes */
@@ -103,7 +119,6 @@ main {
     perspective: 600px;
     border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 10px;
-    text-align: justify;
     box-sizing: border-box;
 }
 
@@ -163,9 +178,9 @@ main {
     color: #1E1E1E; /* Texto oscuro */
 }
 
-#proy-web h2,
-#proy-moviles h2,
-#proy-exp h2 {
+#proy-web h1,
+#proy-moviles h1,
+#proy-exp h1 {
     margin-top: -0.5vw;
     text-align: center;
     color: #2563EB; /* Azul principal */
@@ -186,11 +201,20 @@ main {
     text-align: center;
     border-radius: 10px;
     background-color: #FFFFFF; /* Fondo blanco */
+    transition: 0.5s;
+}
+
+.proy-plantilla:hover{
+    background-color: #eeeeee;
+}
+
+.proy-plantilla h1{
+    font-size: 2vw;
 }
 
 .proy-plantilla img {
-    width: 10vw;
-    height: 10vw;
+    width: 5vw;
+    height: 5vw;
     padding: 0.5vw;
 }
 
@@ -201,6 +225,16 @@ main {
     color: white; /* Texto blanco */
     padding: 0.5vw;
     margin: 0.5vw;
+    border-radius: 5px;
+    font-size: 1.1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.visitar:hover, .descargar:hover{
+    background-color: #2563EB;
+    border: 2px #2563EB solid;
 }
 
 /* footer */
@@ -226,4 +260,10 @@ footer a img {
     width: 5vw;
     height: 5vw;
     margin: 1vw;
+}
+
+/* version */
+
+.version{
+    margin-top: 1vw;
 }
