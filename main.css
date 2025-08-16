@@ -1,6 +1,6 @@
 /* configuracion general */
 body {
-    background-color: #F4F1DE;
+    background-color: #F5F7FA; /* Fondo principal claro */
 }
 
 #titulo {
@@ -26,13 +26,14 @@ main {
 
 /* Acerca de mi */
 #acerca-de-mi {
-    border: 2px black solid;
+    border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 20px;
     width: 40vw;
     height: 21.9vw;
     padding: 1vw;
     margin-right: 1vw;
     flex-direction: column;
+    background-color: #FFFFFF; /* Fondo blanco para contenido */
 }
 
 #acerca-de-mi h2 {
@@ -40,6 +41,7 @@ main {
     padding: 2vw;
     margin-top: -2vw;
     margin-left: 15vw;
+    color: #2563EB; /* Azul principal */
 }
 
 #acerca-de-mi #img-perfil {
@@ -55,14 +57,16 @@ main {
     margin-top: -2.5vw;
     margin-left: 0.5vw;
     text-align: justify;
+    color: #1E1E1E; /* Texto principal oscuro */
 }
 
 /* Mas info */
 #mas-info {
-    border: 2px black solid;
+    border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 20px;
     width: 52vw;
     padding: 1vw;
+    background-color: #FFFFFF; /* Fondo blanco */
 }
 
 .mi-info {
@@ -74,13 +78,15 @@ main {
     display: flex;
     justify-content: space-around;
     margin-top: 1vw;
-    border: 2px black solid;
+    border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 10px;
     align-items: center;
 }
 
 .mi-cv a {
-    border: 2px black solid;
+    border: 2px #2563EB solid; /* Azul principal */
+    background-color: #2563EB; /* Fondo azul principal */
+    color: white; /* Texto blanco */
     border-radius: 10px;
     padding: 1vw;
     margin: 0.4vw;
@@ -90,19 +96,18 @@ main {
 }
 
 /* tarjetas de lenguajes */
-
-.card-flip{
+.card-flip {
     position: relative;
     width: 12vw;
     height: 13.35vw;
     perspective: 600px;
-    border: 2px black solid;
+    border: 2px #D1D5DB solid; /* Bordes suaves */
     border-radius: 10px;
     text-align: justify;
     box-sizing: border-box;
 }
 
-.front, .back{
+.front, .back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -114,32 +119,33 @@ main {
     text-align: center;
 }
 
-.front{
+.front {
     transform: rotateY(0deg);
-    background-color: blue;
+    background-color: #2563EB; /* Azul principal */
     padding-top: 5vw;
+    color: white; /* Texto blanco */
 }
 
-.back{
+.back {
     transform: rotateY(180deg);
     list-style: none;
-    background-color: blueviolet;
+    background-color: #06B6D4; /* Cian secundario */
     padding: 3vw;
+    color: white; /* Texto blanco */
 }
 
-.card-flip:hover .front{
+.card-flip:hover .front {
     transform: rotateY(180deg);
 }
 
-.card-flip:hover .back{
+.card-flip:hover .back {
     transform: rotateY(360deg);
 }
 
 /* Proyectos en mas */
-
 #proyectos {
-    background-color: cadetblue;
-    border: 5px black solid;
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 5px #D1D5DB solid; /* Bordes suaves */
     border-radius: 20px;
     padding: 0.5vw;
     display: flex;
@@ -149,11 +155,12 @@ main {
 #proy-web,
 #proy-moviles,
 #proy-exp {
-    background-color: rgb(121, 4, 4);
-    border: 2px black solid;
+    background-color: #F5F7FA; /* Fondo claro */
+    border: 2px #D1D5DB solid; /* Bordes suaves */
     padding: 1.5vw;
     border-radius: 10px;
     width: 28.5vw;
+    color: #1E1E1E; /* Texto oscuro */
 }
 
 #proy-web h2,
@@ -161,24 +168,24 @@ main {
 #proy-exp h2 {
     margin-top: -0.5vw;
     text-align: center;
+    color: #2563EB; /* Azul principal */
 }
 
 /* tarjetas */
-
-.tarjetas{
+.tarjetas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 /* plantilla de proyecto */
-
 .proy-plantilla {
-    border: 2px black solid;  
-    width: 12vw; 
+    border: 2px #D1D5DB solid; /* Bordes suaves */
+    width: 12vw;
     margin: 0.5vw;
     text-align: center;
     border-radius: 10px;
+    background-color: #FFFFFF; /* Fondo blanco */
 }
 
 .proy-plantilla img {
@@ -189,30 +196,33 @@ main {
 
 .proy-plantilla a {
     display: flex;
-    border: 2px black solid;
+    border: 2px #06B6D4 solid; /* Cian secundario */
+    background-color: #06B6D4; /* Fondo cian */
+    color: white; /* Texto blanco */
     padding: 0.5vw;
     margin: 0.5vw;
 }
 
-
 /* footer */
-footer div{
+footer div {
     display: flex;
     justify-content: space-around;
 }
 
 footer a {
-    border: 2px black solid;
+    border: 2px #2563EB solid; /* Azul principal */
+    background-color: #2563EB; /* Fondo azul */
     border-radius: 10px;
     padding: 2vw;
 }
 
-footer p{
+footer p {
     margin-top: 5vw;
     text-align: center;
+    color: #4B5563; /* Texto secundario */
 }
 
-footer a img{
+footer a img {
     width: 5vw;
     height: 5vw;
     margin: 1vw;
