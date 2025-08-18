@@ -267,3 +267,86 @@ footer a img {
 .version{
     margin-top: 1vw;
 }
+
+/* Media Query para dispositivos pequeños (teléfonos y tablets) */
+@media (max-width: 768px) {
+
+    /* --- General --- */
+    body {
+        font-size: 16px; /* Ajustamos la fuente base para mejor lectura */
+    }
+
+    /* --- Secciones principales --- */
+    #info-personal {
+        flex-direction: column; /* Apila las columnas verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    #acerca-de-mi, #mas-info {
+        width: 90vw; /* Les damos un ancho más grande */
+        margin: 2vw auto; /* Centramos y damos espacio */
+    }
+
+    /* --- Sección de Acerca de Mí --- */
+    #acerca-de-mi h2 {
+        margin: 0;
+        padding: 1vw;
+        margin-left: 0;
+    }
+
+    #img-perfil {
+        width: 25vw; /* Hacemos la imagen más grande para que se vea */
+        height: 25vw;
+        margin-top: 1vw;
+    }
+
+    #presentacion p {
+        font-size: 1rem; /* Usamos una unidad fija para que el texto sea legible */
+        margin-top: 1vw;
+    }
+
+    /* --- Secciones de Proyectos y CV --- */
+    .mi-info, .mi-cv, .tarjetas {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+    }
+
+    .mi-info .card-flip,
+    .mi-info .mi-cv {
+        width: 90vw; /* Ajusta el ancho para que ocupen la pantalla */
+        margin-bottom: 2vw;
+    }
+
+    #proyectos{
+        flex-direction: column;
+    }
+
+    #proyectos #proy-web,
+    #proyectos #proy-moviles,
+    #proyectos #proy-exp{
+        width: 83vw;
+        margin: 2.5vw;
+
+    }
+    
+    .card-flip {
+        width: 80vw;
+        height: 90vw; /* Aumentamos el alto para que se vea bien */
+        margin: 10px auto;
+    }
+
+    .proy-plantilla {
+        width: 80vw; /* Ajustamos el ancho de cada tarjeta de proyecto */
+        margin: 10px auto;
+    }
+
+    .proy-plantilla h2 {
+        font-size: 5vw; /* Aumentamos el tamaño de la fuente para que se lea */
+        text-align: justify;
+        margin-left: 3vw;
+    }
+
+    .proy-plantilla img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
