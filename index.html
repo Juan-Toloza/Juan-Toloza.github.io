@@ -1,199 +1,297 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Toloza</title>
+    <title>Juan Toloza · Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header id="titulo">
-        <h1> Portafolio personal </h1>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <span class="nav-logo">JT<span class="dot">.</span></span>
+        <div class="nav-links">
+            <a href="#acerca-de-mi">Sobre mí</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button id="theme-toggle" aria-label="Cambiar tema">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero">
+        <div id="hero-content">
+            <p class="hero-eyebrow">Hola, soy</p>
+            <h1 class="hero-name">Juan<br>Toloza<span class="dot">.</span></h1>
+            <p class="hero-tagline">Desarrollador <span class="highlight">Full-Stack</span> en construcción —<br>con base en Colombia 🇨🇴</p>
+            <div class="hero-cta">
+                <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                <a href="assets/docs/Juan-Toloza-CV.pdf" download class="btn-secondary">Descargar CV</a>
+            </div>
+        </div>
+        <div id="hero-visual">
+            <div class="avatar-ring">
+                <img src="assets/img/perfil.png" alt="Juan Toloza" id="img-perfil">
+            </div>
+            <div class="floating-badge badge-1">HTML / CSS</div>
+            <div class="floating-badge badge-2">React</div>
+            <div class="floating-badge badge-3">Node.js</div>
+        </div>
     </header>
+
     <main>
-        <div id="info-personal">
-            <section id="acerca-de-mi">
-                <h2 id="acerca-de-mi-titulo"> Acerca de mi </h2>
-                <div id="presentacion">
-                    <img src="assets/img/perfil.png" alt="foto personal" id="img-perfil">
-                    <div id="texto-presentacion">
-                        <p>
-                            ¡Hola! Soy Juan Toloza, un desarrollador de software de 23 años con base en Colombia. Mi
-                            pasión es crear soluciones digitales funcionales y visualmente atractivas, y mi objetivo a
-                            largo plazo es dominar el desarrollo full-stack.
 
-                            Actualmente, estoy enfocado en fortalecer mis habilidades en el desarrollo frontend con
-                            tecnologías como HTML, CSS y JavaScript. Aunque mis conocimientos son básicos, estoy en un
-                            proceso constante de aprendizaje y práctica, explorando nuevas herramientas y re-aprendiendo
-                            las bases para escribir código más limpio y eficiente.
-
-                            Estoy buscando activamente oportunidades como freelance para aplicar mis habilidades en
-                            proyectos del mundo real, crecer profesionalmente y demostrar mi capacidad para adaptarme a
-                            nuevos desafíos. Te invito a explorar mi trabajo y a contactarme para colaborar en un
-                            proyecto.
-                        </p>
+        <!-- SOBRE MÍ -->
+        <section id="acerca-de-mi" class="section">
+            <div class="section-label">01 — Sobre mí</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Construyendo soluciones <span class="highlight">funcionales</span> y atractivas.</h2>
+                    <p>
+                        Soy un desarrollador de software de 23 años con base en Colombia. Mi pasión es crear
+                        soluciones digitales que no solo funcionen bien, sino que también se vean bien.
+                        Mi objetivo a largo plazo es dominar el desarrollo full-stack.
+                    </p>
+                    <p>
+                        Actualmente estoy enfocado en fortalecer mis habilidades en el frontend con HTML, CSS y
+                        JavaScript, mientras sigo explorando el ecosistema backend. Busco activamente oportunidades
+                        freelance para crecer y demostrar mi capacidad de adaptación.
+                    </p>
+                    <a href="assets/docs/Juan-Toloza-CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver CV online</a>
+                </div>
+                <div class="about-decoration">
+                    <div class="deco-card">
+                        <span class="deco-num">23</span>
+                        <span class="deco-label">años</span>
+                    </div>
+                    <div class="deco-card">
+                        <span class="deco-num">8+</span>
+                        <span class="deco-label">tecnologías</span>
+                    </div>
+                    <div class="deco-card">
+                        <span class="deco-num">∞</span>
+                        <span class="deco-label">ganas</span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <div id="mas-info">
-                <section class="mi-info">
-                    <div class="card-flip">
-                        <h2 class="front">frontend</h2>
-                        <ul class="back">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Boostrap</li>
-                        </ul>
-                    </div>
-                    <div class="card-flip">
-                        <h2 class="front">backend</h2>
-                        <ul class="back">
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>Dart</li>
-                        </ul>
-                    </div>
-                    <div class="card-flip">
-                        <h2 class="front">bases de datos</h2>
-                        <ul class="back">
-                            <li>MySql</li>
-                            <li>sqlite</li>
-                            <li>postgresql</li>
-                            <li>mongodb</li>
-                        </ul>
-                    </div>
-                    <div class="card-flip">
-                        <h2 class="front">
-                            herramientas y otros
-                        </h2>
-                        <ul class="back">
-                            <li>firebase</li>
-                            <li>git</li>
-                            <li>github</li>
-                            <li>vscode</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="mi-cv">
-                    <h2> Hoja de vida </h2>
-                    <a href="assets/docs/Juan-Toloza-CV.pdf" target="_blank" rel="noopener noreferrer" id="vercv">Ver mi
-                        CV</a>
-                    <a href="assets/docs/Juan-Toloza-CV.pdf" download="Juan-Toloza-CV.pdf" id="descargarcv">Descargar mi
-                        CV</a>
-                </section>
+        <!-- SKILLS -->
+        <section id="skills-section" class="section">
+            <div class="section-label">02 — Skills</div>
+            <h2 class="section-title">Mi stack tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="db">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Bases de datos</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>Firebase</li>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </div>
+        </section>
 
-        <div id="proyectos">
-            <div id="proy-web">
-                <h1> proyectos web </h1>
-                <div class="tarjetas">
-                    <section class="proy-plantilla">
-                        <h2>Me-commerce</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Weather-API</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>To-Do List</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>sCopyfy</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section">
+            <div class="section-label">03 — Proyectos</div>
+            <h2 class="section-title">Lo que he construido</h2>
+
+            <!-- Filtros -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="movil">Móvil</button>
+                <button class="filter-btn" data-filter="exp">Experimental</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Web -->
+                <article class="project-card" data-type="web">
+                    <div class="project-tag">Web</div>
+                    <img src="assets/img/perfil.png" alt="Me-commerce">
+                    <div class="project-info">
+                        <h3>Me-commerce</h3>
+                        <p>Plataforma de comercio electrónico personal.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="web">
+                    <div class="project-tag">Web</div>
+                    <img src="assets/img/perfil.png" alt="Weather-API">
+                    <div class="project-info">
+                        <h3>Weather-API</h3>
+                        <p>Consulta del clima en tiempo real con API externa.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="web">
+                    <div class="project-tag">Web</div>
+                    <img src="assets/img/perfil.png" alt="To-Do List">
+                    <div class="project-info">
+                        <h3>To-Do List</h3>
+                        <p>Gestor de tareas con persistencia local.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="web">
+                    <div class="project-tag">Web</div>
+                    <img src="assets/img/perfil.png" alt="sCopyfy">
+                    <div class="project-info">
+                        <h3>sCopyfy</h3>
+                        <p>Herramienta de copiado y gestión de snippets.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Móvil -->
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/perfil.png" alt="MoveAPI">
+                    <div class="project-info">
+                        <h3>MoveAPI</h3>
+                        <p>App móvil de consulta de películas.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/perfil.png" alt="Comicdb">
+                    <div class="project-info">
+                        <h3>Comicdb</h3>
+                        <p>Base de datos de cómics consultable desde móvil.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/perfil.png" alt="Hardware Functions">
+                    <div class="project-info">
+                        <h3>Hardware Functions</h3>
+                        <p>Acceso a sensores y hardware del dispositivo.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/perfil.png" alt="Chat&List">
+                    <div class="project-info">
+                        <h3>Chat&List</h3>
+                        <p>Chat en tiempo real con lista de tareas integrada.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experimental -->
+                <article class="project-card" data-type="exp">
+                    <div class="project-tag">Experimental</div>
+                    <img src="assets/img/perfil.png" alt="Portafolio v1">
+                    <div class="project-info">
+                        <h3>Portafolio v1</h3>
+                        <p>Primera versión de este portafolio personal.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="section-label">04 — Contacto</div>
+            <div class="contact-block">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Estoy disponible para oportunidades freelance. Escríbeme y hablamos.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Juan-Toloza" target="_blank" class="social-btn">
+                        <img src="assets/img/211904_social_github_icon.png" alt="GitHub"> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/juan-toloza-dev" target="_blank" class="social-btn">
+                        <img src="assets/img/317725_linkedin_social_icon.png" alt="LinkedIn"> LinkedIn
+                    </a>
+                    <a href="https://www.workana.com/freelancer/325e8b23685707308566bea261cd5006" target="_blank" class="social-btn">
+                        <img src="assets/img/Workana_ISOLOGO_W.png" alt="Workana"> Workana
+                    </a>
+                    <a href="https://www.freelancer.com/u/evilkrakken?sb=t" target="_blank" class="social-btn">
+                        <img src="assets/img/freelancer.svg" alt="Freelancer"> Freelancer
+                    </a>
                 </div>
             </div>
-            <div id="proy-moviles">
-                <h1> proyectos moviles </h1>
-                <div class="tarjetas">
-                    <section class="proy-plantilla">
-                        <h2>MoveAPI</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Comicdb</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Hardware Fuctions</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Chat&List</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                </div>
-            </div>
-            <div id="proy-exp">
-                <h1>proyectos experimentales</h1>
-                <div class="tarjetas">
-                    <section class="proy-plantilla">
-                        <h2>Portafolio</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Portafolio</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Portafolio</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                    <section class="proy-plantilla">
-                        <h2>Portafolio</h2>
-                        <img src="assets/img/perfil.png" alt="img">
-                        <a href="facebook.com" class="visitar">visitar repositorio</a>
-                        <a href="facebook.com" class="descargar">descargar ejecutable</a>
-                    </section>
-                </div>
-            </div>
-        </div>
+        </section>
+
     </main>
-    <footer>
-        <div>
-            <a href="https://github.com/Juan-Toloza"><img src="assets/img/211904_social_github_icon.png"
-                    alt="Github"></a>
-            <a href="https://www.workana.com/freelancer/325e8b23685707308566bea261cd5006"><img
-                    src="assets/img/Workana_ISOLOGO_W.png" alt="Workana"></a>
-            <a href="https://www.linkedin.com/in/juan-toloza-dev"><img src="assets/img/317725_linkedin_social_icon.png"
-                    alt="Linkedin"></a>
-            <a href="https://www.freelancer.com/u/evilkrakken?sb=t"><img src="assets/img/freelancer.svg"
-                    alt="Freelancer"></a>
-        </div>
-        <p class="version">&copy; 2025 Juan Toloza. Todos los derechos reservados.</p>
-        <p class="version">&copy; 2025 Portafolio personal &middot; Versión 1.0</p>
-    </footer>
-</body>
 
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-copy">© 2025 Juan Toloza · Portafolio v2.0</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
