@@ -7,7 +7,7 @@
     <title>Juan Toloza · Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -41,7 +41,7 @@
         </div>
         <div id="hero-visual">
             <div class="avatar-ring">
-                <img src="assets/img/perfil.png" alt="Juan Toloza" id="img-perfil">
+                <img src="assets/img/perfil.jpeg" alt="Juan Toloza" id="img-perfil">
             </div>
             <div class="floating-badge badge-1">HTML / CSS</div>
             <div class="floating-badge badge-2">React</div>
@@ -126,7 +126,7 @@
                     <h3>Herramientas</h3>
                     <ul>
                         <li>Firebase</li>
-                        <li>Git & GitHub</li>
+                        <li>Git &amp; GitHub</li>
                         <li>VS Code</li>
                     </ul>
                 </div>
@@ -138,16 +138,18 @@
             <div class="section-label">03 — Proyectos</div>
             <h2 class="section-title">Lo que he construido</h2>
 
-            <!-- Filtros -->
             <div class="filter-bar">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="web">Web</button>
                 <button class="filter-btn" data-filter="movil">Móvil</button>
+                <button class="filter-btn" data-filter="programa">Programa</button>
+                <button class="filter-btn" data-filter="juego">Juego</button>
                 <button class="filter-btn" data-filter="exp">Experimental</button>
             </div>
 
             <div class="projects-grid">
-                <!-- Web -->
+
+                <!-- ===== WEB ===== -->
                 <article class="project-card" data-type="web">
                     <div class="project-tag">Web</div>
                     <img src="assets/img/me-commerce-logo.png" alt="Me-commerce">
@@ -160,6 +162,7 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="project-card" data-type="web">
                     <div class="project-tag">Web</div>
                     <img src="assets/img/apiverse.png" alt="ApiVerse">
@@ -172,6 +175,7 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="project-card" data-type="web">
                     <div class="project-tag">Web</div>
                     <img src="assets/img/to-doit list.png" alt="To-Doit List">
@@ -184,12 +188,13 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="project-card" data-type="web">
                     <div class="project-tag">Web</div>
                     <img src="assets/img/scopyfy.png" alt="sCopyfy">
                     <div class="project-info">
                         <h3>sCopyfy</h3>
-                        <p>Herramienta de copiado y gestión de snippets.</p>
+                        <p>Herramienta de copiado y gestión de snippets de código.</p>
                         <div class="project-links">
                             <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
                             <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Demo</a>
@@ -197,49 +202,13 @@
                     </div>
                 </article>
 
-                <!-- Móvil -->
+                <!-- ===== MÓVIL ===== -->
                 <article class="project-card" data-type="movil">
                     <div class="project-tag">Móvil</div>
-                    <img src="assets/img/mobilapi.png" alt="mobilapi">
+                    <img src="assets/img/mobilapi.png" alt="MoveAPI">
                     <div class="project-info">
                         <h3>MoveAPI</h3>
-                        <p>App móvil de consulta de películas.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
-                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-type="movil">
-                    <div class="project-tag">Móvil</div>
-                    <img src="assets/img/myaigent.png" alt="Comicdb">
-                    <div class="project-info">
-                        <h3>Comicdb</h3>
-                        <p>Base de datos de cómics consultable desde móvil.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
-                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-type="movil">
-                    <div class="project-tag">Móvil</div>
-                    <img src="assets/img/hardwarefunctions.png" alt="Hardware Functions">
-                    <div class="project-info">
-                        <h3>Hardware Functions</h3>
-                        <p>Acceso a sensores y hardware del dispositivo.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
-                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-type="movil">
-                    <div class="project-tag">Móvil</div>
-                    <img src="assets/img/chat.png" alt="Chat&List">
-                    <div class="project-info">
-                        <h3>Chat&List</h3>
-                        <p>Chat en tiempo real con lista de tareas integrada.</p>
+                        <p>App móvil de consulta de películas en tiempo real.</p>
                         <div class="project-links">
                             <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
                             <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
@@ -247,18 +216,167 @@
                     </div>
                 </article>
 
-                <!-- Experimental -->
-                <article class="project-card" data-type="exp">
-                    <div class="project-tag">Experimental</div>
-                    <img src="assets/img/perfil.png" alt="Portafolio v1">
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/myaigent.png" alt="myAigent">
                     <div class="project-info">
-                        <h3>Portafolio v1</h3>
-                        <p>Primera versión de este portafolio personal.</p>
+                        <h3>myAigent</h3>
+                        <p>Agente IA móvil que responde preguntas, automatiza tareas y aprende de tus hábitos.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/hardwarefunctions.png" alt="Hardware Functions">
+                    <div class="project-info">
+                        <h3>Hardware Functions</h3>
+                        <p>Acceso directo a sensores y funciones del hardware del dispositivo.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/chat.png" alt="Chat">
+                    <div class="project-info">
+                        <h3>Chat</h3>
+                        <p>Chat en tiempo real con mensajería instantánea y lista de contactos integrada.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                            <a href="https://github.com/Juan-Toloza" class="btn-filled" target="_blank">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/asistenciadocentes.png" alt="Asistencia Docentes QR">
+                    <div class="project-info">
+                        <h3>Asistencia Docentes QR</h3>
+                        <p>App de registro de asistencia docente mediante códigos QR. Uso institucional con acceso restringido.</p>
                         <div class="project-links">
                             <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
                         </div>
                     </div>
                 </article>
+
+                <article class="project-card" data-type="movil">
+                    <div class="project-tag">Móvil</div>
+                    <img src="assets/img/petlink.png" alt="PetLink">
+                    <div class="project-info">
+                        <h3>PetLink</h3>
+                        <p>Conecta dueños con cuidadores de mascotas y veterinarias. Encuentra el cuidado perfecto para tu mascota.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== PROGRAMAS ===== -->
+                <article class="project-card" data-type="programa">
+                    <div class="project-tag">Programa</div>
+                    <img src="assets/img/omnifiles.png" alt="OmniFiles">
+                    <div class="project-info">
+                        <h3>OmniFiles</h3>
+                        <p>Convierte y edita archivos Office, PDF y más desde tu PC. Privacidad total: tus archivos nunca salen de tu equipo.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="programa">
+                    <div class="project-tag">Programa</div>
+                    <img src="assets/img/keypulse.png" alt="KeyPulse">
+                    <div class="project-info">
+                        <h3>KeyPulse</h3>
+                        <p>Vive en tu barra de tareas y registra pulsaciones de teclas y movimiento del mouse por hora. Genera una gráfica neón al final del día.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="programa">
+                    <div class="project-tag">Programa</div>
+                    <img src="assets/img/desknotes.png" alt="DeskNotes">
+                    <div class="project-info">
+                        <h3>DeskNotes</h3>
+                        <p>Notas adhesivas para el escritorio de Windows. Siempre visibles, ligeras y listas cuando las necesitas.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== JUEGOS ===== -->
+                <article class="project-card" data-type="juego">
+                    <div class="project-tag">Juego</div>
+                    <img src="assets/img/zeromanager.png" alt="zeromanager">
+                    <div class="project-info">
+                        <h3>Gridiron Architect</h3>
+                        <p>Football manager con gestión profunda: táctica, finanzas, fichajes y desarrollo de jugadores. Construido con mis habilidades y con IA en conjunto.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="juego">
+                    <div class="project-tag">Juego · Web</div>
+                    <img src="assets/img/YGO requiem duel.png" alt="YGO RequiemDuel">
+                    <div class="project-info">
+                        <h3>YGO RequiemDuel</h3>
+                        <p>Juego de cartas Yu-Gi-Oh! para la web con mecánicas fieles al OCG/TCG y soporte multijugador.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="juego">
+                    <div class="project-tag">Juego</div>
+                    <img src="assets/img/raidersfight.png" alt="Raiders Fights">
+                    <div class="project-info">
+                        <h3>Raiders Fights</h3>
+                        <p>Juego de pelea 2D estilo clásico con personajes únicos, combos y modos de batalla local y online.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="exp">
+                    <div class="project-tag">Experimental · Web</div>
+                    <img src="assets/img/perfil.png" alt="ZeroCups">
+                    <div class="project-info">
+                        <h3>ZeroCups</h3>
+                        <p>Plataforma web para organizar torneos y ligas de videojuegos. Brackets, puntuaciones y rankings en tiempo real.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-type="exp">
+                    <div class="project-tag">Experimental · Web</div>
+                    <img src="assets/img/perfil.png" alt="MS EFFECTS">
+                    <div class="project-info">
+                        <h3>MS EFFECTS</h3>
+                        <p>Sitio web corporativo para empresa de pirotecnia. Catálogo de productos, servicios y contacto para eventos.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Juan-Toloza" class="btn-outline" target="_blank">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -270,16 +388,19 @@
                 <p>Estoy disponible para oportunidades freelance. Escríbeme y hablamos.</p>
                 <div class="social-links">
                     <a href="https://github.com/Juan-Toloza" target="_blank" class="social-btn">
-                        <img src="assets/img/211904_social_github_icon.png" alt="GitHub"> GitHub
+                        <span class="social-icon">🐙</span> GitHub
                     </a>
                     <a href="https://www.linkedin.com/in/juan-toloza-dev" target="_blank" class="social-btn">
-                        <img src="assets/img/317725_linkedin_social_icon.png" alt="LinkedIn"> LinkedIn
+                        <span class="social-icon">💼</span> LinkedIn
                     </a>
-                    <a href="https://www.workana.com/freelancer/325e8b23685707308566bea261cd5006" target="_blank" class="social-btn">
-                        <img src="assets/img/Workana_ISOLOGO_W.png" alt="Workana"> Workana
+                    <a href="mailto:juancho.160300@gmail.com" class="social-btn">
+                        <span class="social-icon">✉️</span> Gmail
                     </a>
-                    <a href="https://www.freelancer.com/u/evilkrakken?sb=t" target="_blank" class="social-btn">
-                        <img src="assets/img/freelancer.svg" alt="Freelancer"> Freelancer
+                    <a href="https://wa.me/573162554699" target="_blank" class="social-btn">
+                        <span class="social-icon">💬</span> WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/juan_tolozaa/" target="_blank" class="social-btn">
+                        <span class="social-icon">📸</span> Instagram
                     </a>
                 </div>
             </div>
@@ -289,7 +410,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p class="footer-copy">© 2025 Juan Toloza · Portafolio v2.0</p>
+        <p class="footer-copy">© 2025 Juan Toloza · Portafolio v5.0</p>
     </footer>
 
     <script src="main.js"></script>
